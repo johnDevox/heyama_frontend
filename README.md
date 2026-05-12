@@ -1,4 +1,4 @@
-![Preview](./assets/images/image.png)
+![Preview](/frontend/assets/images/image.png)
 
 ## Description du projet (français)
 
