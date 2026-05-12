@@ -1,6 +1,6 @@
 ![Preview](/frontend/assets/images/image.png)
 
-## Description du projet (français)
+## Description du projet 
 
 Ce projet est une petite application Next.js qui permet de créer, lister et supprimer des "objets" (items) enrichis d'un titre, d'une description et d'une image. Principales fonctionnalités :
 
