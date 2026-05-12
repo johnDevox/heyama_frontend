@@ -1,4 +1,4 @@
-
+![Preview](./assets/images/image.png)
 
 ## Description du projet (français)
 
@@ -21,7 +21,7 @@ Le frontend consomme une API externe (baseURL définie via la variable d'environ
 
 ## Comment lancer le serveur (développement et production)
 
-Assurez-vous d'abord d'avoir Node.js et npm installés.
+
 
 1. Installer les dépendances :
 
@@ -47,7 +47,7 @@ npm run build
 npm start
 ```
 
-4. Variables d'environnement importantes (à définir dans `.env.local` à la racine du dossier `frontend`) :
+4. Variables d'environnement importantes (à définir dans `.env.local` à la racine du projet) :
 
 - `NEXT_PUBLIC_API_URL` : URL de l'API REST (ex: https://api.example.com)
 - `NEXT_PUBLIC_SOCKET_URL` : URL du serveur socket.io (ex: wss://sockets.example.com)
