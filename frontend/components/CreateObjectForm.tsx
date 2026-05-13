@@ -1,16 +1,26 @@
-'use client';
+"use client";
 import { useState } from 'react';
 import { createObject } from '@/lib/api';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 
+/**
+ * Formulaire côté client permettant de créer un nouvel objet.
+ * Gère les champs title, description et l'upload d'une image.
+ * Envoie les données via `createObject(formData)` et remet le formulaire à zéro
+ * après création.
+ */
 export function CreateObjectForm() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [image, setImage] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
 
+  /**
+   * Soumet le formulaire : validation minimale côté client,
+   * création via l'API et réinitialisation du formulaire.
+   */
   const handleSubmit = async () => {
     if (!title || !description || !image) return alert('Tous les champs sont requis');
     setLoading(true);

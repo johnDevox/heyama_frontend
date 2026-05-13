@@ -4,6 +4,12 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import type { AppObject } from '@/lib/api';
 
+/**
+ * Carte affichant un objet dans la grille d'objets.
+ * Props:
+ * - object: AppObject -> données à afficher
+ * - onDelete: callback appelé avec l'id quand l'utilisateur supprime l'objet
+ */
 export function ObjectCard({
   object,
   onDelete,
