@@ -61,4 +61,8 @@ NEXT_PUBLIC_SOCKET_URL=https://api.example.com/socket
 
 ---
 
-Si vous voulez, j'ajoute une section "Développement" avec les commandes de lint/build/test et je peux aussi préparer un petit fichier `Procfile` ou la configuration Vercel si vous déployez là‑bas.
+# Génère la migration depuis ton entité existante
+npm run migration:generate -- src/migrations/InitSchema
+
+# Vérifie que le fichier a bien été créé
+ls src/migrations/
